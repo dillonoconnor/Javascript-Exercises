@@ -4,7 +4,7 @@ let findTheOldest = function(array) {
         const ageB = deathAdj(b.yearOfDeath, b.yearOfBirth);
         return ageA > ageB ? -1 : 1;
     });
-    return oldestFirst[0]["name"];
+    return oldestFirst[0];
 }
 const deathAdj = (death, birth) => {
     if (!death) {
